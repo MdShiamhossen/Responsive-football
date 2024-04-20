@@ -7,8 +7,47 @@ body{
     padding: 0;
     font-family: "poppins";
 }
+
+/* navbar style code start  */
+
+nav{
+    background-color: #2D25A0;
+    margin-bottom: 0px;
+}
+nav ul li{
+    display: inline-block;
+    padding-top: 42px;
+    margin:0px 18px;
+}
+nav ul li,a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+}
+nav ul li a:hover{
+    color: #E02C6D;
+}
+nav ul{
+    margin: 0px;
+}
+.checkbtn{
+    float: left;
+    cursor: pointer;
+    margin-top: 42px;
+    color: #E02C6D;
+    display: none;
+}
+#check{
+    float: left;
+    display: none;
+    line-height: 90px;
+}
+/* navbar style code end  */
+
 .top-banner{
-    padding-top: 67px;
+    padding-top: 49px;
     padding-bottom: 86px;
     display: flex;
     justify-content: center;
@@ -123,8 +162,6 @@ body{
     height: 427px;
 }
 
-
-
 /* footer section code start here  */
 
 .logo-socialmedia{
@@ -152,6 +189,42 @@ body{
 /* -------------------------*\
 | mediaquary code start here  |
 \*--------------------------*/
+
+
+/* navbar code start here  */
+@media (max-width:730px) {
+    .checkbtn{
+        position: fixed;
+        display: block;
+        margin-left: 40px;
+    }
+
+    nav ul li{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        height: 100vh;
+        left: -100%;
+        top: 80px;
+        padding: 50px;
+        background-color: #e02c6e;
+        transition: 1s;
+        border-radius: 0px 10px 0px 0px;
+        box-shadow: 0px 0px 10px lightslategray;
+    }
+    nav ul li:hover a{
+        color: white;
+    }
+
+    #check:checked ~ nav ul{
+        left: 0;
+    }
+
+}
+
+/* navbar code end  */
+
 @media (max-width:1023px) {
     .container img{
         width: 356.01px;
