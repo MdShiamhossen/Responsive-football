@@ -9,9 +9,13 @@ body{
 }
 
 /* navbar style code start  */
-
-nav{
+header{
+    display: flex;
     background-color: #2D25A0;
+    align-items: center;
+    justify-content: space-between;
+}
+nav{
     margin-bottom: 0px;
 }
 nav ul li{
@@ -35,7 +39,7 @@ nav ul{
 .checkbtn{
     float: left;
     cursor: pointer;
-    margin-top: 42px;
+    margin-top: 30px;
     color: #E02C6D;
     display: none;
 }
@@ -44,6 +48,19 @@ nav ul{
     display: none;
     line-height: 90px;
 }
+
+/* log in style  */
+.login{
+    list-style: none;
+    margin-top: 42px;
+    margin-right: 120px;
+}
+.login a{
+    color: white;
+    padding: 5px 10px;
+    background-color: #E02C6D;
+}
+
 /* navbar style code end  */
 
 .top-banner{
@@ -192,7 +209,7 @@ nav ul{
 
 
 /* navbar code start here  */
-@media (max-width:730px) {
+@media (max-width:767px) {
     .checkbtn{
         position: fixed;
         display: block;
@@ -206,8 +223,8 @@ nav ul{
         position: fixed;
         height: 100vh;
         left: -100%;
-        top: 80px;
-        padding: 50px;
+        top: 100px;
+        padding: 40px;
         background-color: #e02c6e;
         transition: 1s;
         border-radius: 0px 10px 0px 0px;
@@ -222,6 +239,20 @@ nav ul{
     }
 
 }
+@media (max-width:888px) and (min-width:761px) {
+    .login{
+        margin-right: 5px;
+    }
+
+}
+
+@media (max-width:762px) {
+    .login{
+        margin-right: 21px;
+    }
+}
+
+
 
 /* navbar code end  */
 
@@ -272,7 +303,7 @@ nav ul{
     }
 }
 
-@media (max-width:767px) {
+@media (max-width:774px) {
     .top-banner{
         padding-top: 67px;
         padding-bottom: 86px;
@@ -337,8 +368,10 @@ nav ul{
 
 }
 
+
 @media (max-width:470px) {
     .container{
         margin-left: 20px;
     }
+
 }
