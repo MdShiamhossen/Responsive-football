@@ -93,6 +93,7 @@ body{
     height: 241px;
     margin-right: 66px;
 }
+
 .highlight h2{
     font-size: 48px;
     font-weight: 700;
@@ -148,24 +149,123 @@ body{
 /* all section code end  */
 
 
-
-
-
 /* -------------------------*\
 | mediaquary code start here  |
 \*--------------------------*/
+@media (max-width:1023px) {
+    .container img{
+        width: 356.01px;
+        height: 238px;
+    }
+    .first-container{
+        margin-right: 70px;
+    }
+    .container h2{
+        font-size: 35px;
+        font-weight: 700;
+        color: white;
+    }
+
+    .players{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .match{
+        margin-bottom: 23px;
+    }
+    .match-highlight{
+        grid-template-columns: repeat(2,1fr);
+        margin: 60px;
+    }
+    .highlight h2{
+        font-size: 20px;
+        width: 290px;
+    }
+    .highlight img{
+        width: 328px;
+        height: 248px;
+        margin-top: 29px;
+    }
+    .frist-highlight{
+        width: 329px;
+        height: 299px;
+        margin-right: 0px;
+    }
+
+    .Highlights-matchs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (max-width:767px) {
+    .top-banner{
+        padding-top: 67px;
+        padding-bottom: 86px;
+        display: flex;
+        flex-direction: column;
+    }
+    .container img{
+        margin-top: 50px;
+        width: 329px;
+        height: 259px;
+    }
 
 
-@media (max-width:700px) {
+    /* player  */
+
     .players{
         grid-template-columns: repeat(1,1fr);
     }
-    .player img{
-        width: 330px;
-        height: 256px;
+
+
+    /* match  */
+    .match{
+        margin-bottom: 23px;
     }
-    .player{
-        width: 330px;
-        height: 474px;
+    .match-highlight{
+        grid-template-columns: repeat(1,1fr);
+        margin: 60px;
+    }
+    .highlight h2{
+        font-size: 30px;
+        width: 329px;
+    }
+    .highlight img{
+        width: 328px;
+        height: 248px;
+        margin-top: 29px;
+    }
+    .frist-highlight{
+        width: 329px;
+        height: 299px;
+        margin-right: 0px;
+    }
+
+    .Highlights-matchs{
+        display: flex;
+        justify-content: center;
+        align-items: last baseline;
+    }
+
+    /* footer  */
+    .logo-socialmedia{
+        margin-bottom: 187px;
+    }
+    .social-logo img{
+        width: 271px;
+        height: 63px;
+    }
+    .icon a{
+        width: 170px;
+        height: 32px;
+    }
+
+}
+
+@media (max-width:470px) {
+    .container{
+        margin-left: 20px;
     }
 }
